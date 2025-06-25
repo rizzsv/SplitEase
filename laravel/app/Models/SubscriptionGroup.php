@@ -17,6 +17,9 @@ class SubscriptionGroup extends Model
         'product_subscription_id',
         'max_capacity',
         'participant_count',
+        'email',              
+        'phone',              
+        'customer_name',
     ];
 
     //relasi -> group milik product mana
@@ -38,7 +41,7 @@ class SubscriptionGroup extends Model
     }
 
     //relasi -> group memiliki banyak partisipan
-    public function groupParticipant():HasMany
+    public function groupParticipant(): HasMany
     {
         return $this->hasMany(GroubParticipant::class);
     }

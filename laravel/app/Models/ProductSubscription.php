@@ -17,7 +17,7 @@ class ProductSubscription extends Model
         'phone',
         'email',
         'proof',
-        'boooing_trx_id',
+        'booking_trx_id',
         'total_amount',
         'total_tax_amount',
         'customer_bank_name',
